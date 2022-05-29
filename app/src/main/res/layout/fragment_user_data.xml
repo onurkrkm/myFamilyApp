@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/usercreat"
+    tools:context=".userData" >
+
+    <EditText
+        android:id="@+id/firtsNameEdt"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/telEdit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:hint="Telefon Numarası"
+        android:gravity="center"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEdt" />
+
+    <EditText
+        android:id="@+id/lastNameEdt"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Soyadınız"
+        android:inputType="textPersonName"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firtsNameEdt" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Kaydet"
+        android:backgroundTint="#00aeff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telEdit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

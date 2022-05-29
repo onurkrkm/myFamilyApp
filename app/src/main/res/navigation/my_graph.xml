@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/loginFrament">
+
+    <fragment
+        android:id="@+id/loginFrament"
+        android:name="com.example.myfamilyapp.loginFrament"
+        android:label="fragment_login_frament"
+        tools:layout="@layout/fragment_login_frament" >
+        <action
+            android:id="@+id/action_loginFrament_to_userData2"
+            app:destination="@id/userData" />
+        <action
+            android:id="@+id/action_loginFrament_to_userDashBoard"
+            app:destination="@id/userDashBoard" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragmant"
+        android:name="com.example.myfamilyapp.chatFragmant"
+        android:label="fragment_chat_fragmant"
+        tools:layout="@layout/fragment_chat_fragmant" />
+    <fragment
+        android:id="@+id/userData"
+        android:name="com.example.myfamilyapp.userData"
+        android:label="fragment_user_data"
+        tools:layout="@layout/fragment_user_data" >
+        <action
+            android:id="@+id/action_userData_to_userDashBoard"
+            app:destination="@id/userDashBoard" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDashBoard"
+        android:name="com.example.myfamilyapp.userDashBoard"
+        android:label="fragment_user_dash_board"
+        tools:layout="@layout/fragment_user_dash_board" >
+        <action
+            android:id="@+id/action_userDashBoard_to_chatFragmant"
+            app:destination="@id/chatFragmant" />
+        <action
+            android:id="@+id/action_userDashBoard_to_grubsCreat"
+            app:destination="@id/grubsCreat" />
+        <action
+            android:id="@+id/action_userDashBoard_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/grubsCreat"
+        android:name="com.example.myfamilyapp.grubsCreat"
+        android:label="fragment_grubs_creat"
+        tools:layout="@layout/fragment_grubs_creat" >
+        <action
+            android:id="@+id/action_grubsCreat_to_userDashBoard"
+            app:destination="@id/userDashBoard" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.myfamilyapp.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>
