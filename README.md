@@ -14,5 +14,5 @@ In order to use the application, you need to integrate the APIs And Google servi
 </div>
 <div align="center">
     Maps Fragment - Harita Ekranı
-    <img src=https://github.com/onurkrkm/myFamilyApp/blob/master/Screenshot_1653791699.png.png width="360"</img> 
+    <img src=https://github.com/onurkrkm/myFamilyApp/blob/master/Screenshot_1653791699.png width="360"</img> 
 </div>
